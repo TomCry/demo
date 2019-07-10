@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^users/', include('users.urls', namespace='users')),
     # url(r'^users/', include(users.urls))
     url(r'^', include('reqresp.urls')),
+    url(r'^classview/', include('classview.urls')),
 ]
