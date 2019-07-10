@@ -19,6 +19,9 @@ def my_decorator(view_func):
 class DemoView(View):
 
     @method_decorator(my_decorator)
+    def dispatch(self, request, *args, **kwargs):
+        super().dispatch(request, *args, **kwargs)
+
     def get(self, request):
         return HttpResponse('get page')
 

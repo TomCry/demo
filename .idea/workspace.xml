@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="669bfd4a-f4cd-4c68-a24a-539d3b888b26" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/classview/urls.py" afterPath="$PROJECT_DIR$/classview/urls.py" />
       <change beforePath="$PROJECT_DIR$/classview/views.py" afterPath="$PROJECT_DIR$/classview/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,8 +67,8 @@
           <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/classview/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="171">
-                  <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+                <state relative-caret-position="277">
+                  <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#36#0" expanded="true" />
                   </folding>
@@ -379,7 +378,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562723963313</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="类视图装饰器第二种方法">
+      <created>1562724303225</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1562724303225</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -430,7 +436,8 @@
     <MESSAGE value="提取url的路径参数 weather/beijing/2018" />
     <MESSAGE value="redis存session的相关问题" />
     <MESSAGE value="类视图装饰器第一种简单的方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="类视图装饰器第一种简单的方法" />
+    <MESSAGE value="类视图装饰器第二种方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="类视图装饰器第二种方法" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -689,8 +696,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classview/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        <state relative-caret-position="277">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
