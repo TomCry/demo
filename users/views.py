@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import JsonResponse
 
 # Create your views here.
 from django.http import HttpResponse
@@ -13,3 +14,5 @@ def say(request):
     url = reverse('users:index')
     print(url)
     return HttpResponse("say")
+
+

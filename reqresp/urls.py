@@ -8,4 +8,5 @@ from . import views
 urlpatterns = [
     # url(r'^weather/([a-z]+)/(\d{4})/$', views.weather),
     url(r'^weather/(?P<city>[a-z]+)/(?P<year>\d{4})/$', views.weather),
+    url(r'^response/$', views.demo_response),
 ]
