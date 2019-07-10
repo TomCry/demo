@@ -67,8 +67,8 @@
           <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/classview/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="277">
-                  <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+                <state relative-caret-position="327">
+                  <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#36#0" expanded="true" />
                   </folding>
@@ -119,8 +119,8 @@
           <file leaf-file-name="urls.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/classview/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="171">
-                  <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+                <state relative-caret-position="95">
+                  <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
                   <folding>
                     <element signature="e#54#86#0" expanded="true" />
                   </folding>
@@ -385,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562724303225</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="类视图装饰器第三种方法">
+      <created>1562724682493</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1562724682493</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -437,7 +444,8 @@
     <MESSAGE value="redis存session的相关问题" />
     <MESSAGE value="类视图装饰器第一种简单的方法" />
     <MESSAGE value="类视图装饰器第二种方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="类视图装饰器第二种方法" />
+    <MESSAGE value="类视图装饰器第三种方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="类视图装饰器第三种方法" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -686,8 +694,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classview/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        <state relative-caret-position="95">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding>
             <element signature="e#54#86#0" expanded="true" />
           </folding>
@@ -696,8 +704,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classview/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="327">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>

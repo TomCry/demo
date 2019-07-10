@@ -16,11 +16,24 @@ def my_decorator(view_func):
     return wrapper
 
 
+# class DemoView(View):
+#
+#     @method_decorator(my_decorator)
+#     def dispatch(self, request, *args, **kwargs):
+#         super().dispatch(request, *args, **kwargs)
+#
+#     def get(self, request):
+#         return HttpResponse('get page')
+#
+#     def post(self, request):
+#         return HttpResponse(' post page')
+
+
+@method_decorator(my_decorator, name='get')
 class DemoView(View):
 
-    @method_decorator(my_decorator)
     def dispatch(self, request, *args, **kwargs):
-        super().dispatch(request, *args, **kwargs)
+        return super().dispatch(request, *args, **kwargs)
 
     def get(self, request):
         return HttpResponse('get page')
