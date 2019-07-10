@@ -23,4 +23,5 @@ urlpatterns = [
     # url(r'^users/', include(users.urls))
     url(r'^', include('reqresp.urls')),
     url(r'^classview/', include('classview.urls')),
+    url(r'^index/', include('booktest.urls')),
 ]
