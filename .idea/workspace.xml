@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="669bfd4a-f4cd-4c68-a24a-539d3b888b26" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/classview/urls.py" />
-      <change beforePath="$PROJECT_DIR$/demo/settings.py" afterPath="$PROJECT_DIR$/demo/settings.py" />
-      <change beforePath="$PROJECT_DIR$/demo/urls.py" afterPath="$PROJECT_DIR$/demo/urls.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/classview/urls.py" afterPath="$PROJECT_DIR$/classview/urls.py" />
+      <change beforePath="$PROJECT_DIR$/classview/views.py" afterPath="$PROJECT_DIR$/classview/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,8 +68,8 @@
           <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/classview/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="304">
-                  <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+                <state relative-caret-position="171">
+                  <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
                   <folding>
                     <element signature="e#0#36#0" expanded="true" />
                   </folding>
@@ -82,7 +81,7 @@
             <entry file="file://$PROJECT_DIR$/demo/urls.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="247">
-                  <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+                  <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
                   <folding>
                     <element signature="e#638#679#0" expanded="true" />
                   </folding>
@@ -122,7 +121,7 @@
             <entry file="file://$PROJECT_DIR$/classview/urls.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="171">
-                  <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+                  <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
                   <folding>
                     <element signature="e#54#86#0" expanded="true" />
                   </folding>
@@ -158,8 +157,8 @@
         <option value="$PROJECT_DIR$/reqresp/views.py" />
         <option value="$PROJECT_DIR$/demo/urls.py" />
         <option value="$PROJECT_DIR$/demo/settings.py" />
-        <option value="$PROJECT_DIR$/classview/views.py" />
         <option value="$PROJECT_DIR$/classview/urls.py" />
+        <option value="$PROJECT_DIR$/classview/views.py" />
       </list>
     </option>
   </component>
@@ -373,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562720113167</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="类视图装饰器第一种简单的方法">
+      <created>1562723963313</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1562723963313</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -423,7 +429,8 @@
     <MESSAGE value="路由处理：可以在主路由添加命名空间，在子路由中添加命名，然后可以通过反向解析得到解析后的路由地址" />
     <MESSAGE value="提取url的路径参数 weather/beijing/2018" />
     <MESSAGE value="redis存session的相关问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="redis存session的相关问题" />
+    <MESSAGE value="类视图装饰器第一种简单的方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="类视图装饰器第一种简单的方法" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -655,7 +662,7 @@
     <entry file="file://$PROJECT_DIR$/demo/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
           <folding>
             <element signature="e#638#679#0" expanded="true" />
           </folding>
@@ -673,7 +680,7 @@
     <entry file="file://$PROJECT_DIR$/classview/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
           <folding>
             <element signature="e#54#86#0" expanded="true" />
           </folding>
@@ -682,8 +689,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classview/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        <state relative-caret-position="171">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
