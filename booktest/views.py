@@ -10,6 +10,7 @@ from rest_framework.response import Response
 from rest_framework.generics import GenericAPIView
 from rest_framework.generics import ListAPIView
 from rest_framework.permissions import IsAuthenticated, AllowAny, BasePermission
+from django.db import DatabaseError
 
 # class BookListAPIView(APIView):
 #     def get(self, request):
@@ -66,6 +67,7 @@ class BookDetailAPIView(GenericAPIView):
 
 from rest_framework.decorators import action
 from .serializers import BookReadSerialzer
+from rest_framework.pagination import PageNumberPagination
 
 
 class MyPermission(BasePermission):
@@ -74,10 +76,17 @@ class MyPermission(BasePermission):
         return False
 
 
+class StandardPageNumberPagination(PageNumberPagination):
+    page_size_query_param = 'page_size'
+    max_page_size = 10
+
+
 class BookInfoViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, GenericViewSet):
     queryset = BookInfo.objects.all()
     # serializer_class = BookInfoSerializer
     permission_classes = [MyPermission]
+    filter_fields = ('btitle', 'bread')
+    pagination_class = StandardPageNumberPagination
 
     def get_serializer_class(self):
         # 重写提供不同的序列化器
@@ -98,6 +107,7 @@ class BookInfoViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, GenericV
         """
         返回最新的图书信息
         """
+        raise DatabaseError()
         book = BookInfo.objects.latest('id')
         serializer = self.get_serializer(book)
         return Response(serializer.data)
