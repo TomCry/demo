@@ -25,4 +25,24 @@ class HeroInfoSerializer(serializers.Serializer):
     hname = serializers.CharField(label='名字', max_length=20)
     hgender = serializers.ChoiceField(choices=GENDER_CHOICES, label='性别', required=False)
     hcomment = serializers.CharField(label='描述信息', max_length=200, required=False, allow_null=True)
-    hbook= serializers.PrimaryKeyRelatedField(read_only=True)
+    hbook = serializers.PrimaryKeyRelatedField(read_only=True)
+
+
+from .models import BookInfo
+
+
+class BookReadSerialzer(serializers.ModelSerializer):
+    class Meta:
+        model = BookInfo
+        fields = ('bread',)
+        extra_kwargs = {
+            'bread': {
+                'required': True,
+                'min_value': 0,
+            }
+        }
+
+    def update(self, instance, validated_data):
+        instance.bread = validated_data['bread']
+        instance.save()
+        return instance
