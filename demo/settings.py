@@ -143,5 +143,9 @@ REST_FRAMEWORK = {
         # 'rest_framework.renderers.JSONRenderer',  # json渲染器
         'renders.JSONRender',
         'rest_framework.renderers.BrowsableAPIRenderer',  # 浏览API渲染器
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES':(
+        # 'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
     )
 }

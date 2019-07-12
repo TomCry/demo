@@ -9,6 +9,7 @@ from .serializers import BookInfoSerializer, HeroInfoSerializer
 from rest_framework.response import Response
 from rest_framework.generics import GenericAPIView
 from rest_framework.generics import ListAPIView
+from rest_framework.permissions import IsAuthenticated, AllowAny, BasePermission
 
 # class BookListAPIView(APIView):
 #     def get(self, request):
@@ -67,9 +68,16 @@ from rest_framework.decorators import action
 from .serializers import BookReadSerialzer
 
 
+class MyPermission(BasePermission):
+
+    def has_object_permission(self, request, view, obj):
+        return False
+
+
 class BookInfoViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, GenericViewSet):
     queryset = BookInfo.objects.all()
     # serializer_class = BookInfoSerializer
+    permission_classes = [MyPermission]
 
     def get_serializer_class(self):
         # 重写提供不同的序列化器
@@ -77,6 +85,12 @@ class BookInfoViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin, GenericV
             return BookReadSerialzer
         else:
             return BookInfoSerializer
+
+    # def get_permissions(self):
+    #     if self.action == 'read':
+    #         return [IsAuthenticated()]
+    #     else:
+    #         return [AllowAny()]
 
     # detail为False 表示不需要处理具体的BookInfo对象
     @action(methods=['get'], detail=False)
